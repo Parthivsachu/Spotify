@@ -373,8 +373,8 @@ nav{
     color: #b3b3b3;
 }
 .social-links{
-    display: inline;
-    padding-right: 16px;
+    display: inline-block;
+    padding-right: 13px;
 }
 .social-wrapper{
     height: 40px;
