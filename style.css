@@ -1,0 +1,460 @@
+:root{
+    --encore-body-font-stack: SpotifyMixUI, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif);
+    --encore-title-font-stack: SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif);
+    --encore-variable-font-stack: SpotifyMixUITitleVariable, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif);
+    --fallback-fonts: Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic ProN, Meiryo, MS Gothic;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Deva;
+    font-weight: 800;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Deva-Black-574b12f3ca1769e18083e8398295c38b.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Deva-Black-f1dca2ee660273063af0316d4b7da438.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0901-097f,u+200c-200e,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Deva;
+    font-weight: 700;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Deva-Bold-82d3b8d301ab9dcad4f2eb1dea88e141.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Deva-Bold-a218ed3bd8e480245847933a79f4ebfb.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0901-097f,u+200c-200e,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Deva;
+    font-weight: 400;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Deva-Book-e8ee3298dd8cb0bae68e3ed19375a5ec.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Deva-Book-e1dc3d746b24723f8d3dadb314b97705.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0901-097f,u+200c-200e,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Grek;
+    font-weight: 800;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Grek-Black-4674b11f16a27c4b655bd8e95ddd0738.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Grek-Black-49883536c1a3bfc688235ce40572731d.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0375,u+037a,u+0384,u+0386,u+0388-038a,u+038c,u+038e-03a1,u+03a3-03cf,u+03d7,u+2126,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Grek;
+    font-weight: 700;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Grek-Bold-d182d2d11e63b291cd25492352c02164.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Grek-Bold-53bb923248ba22cf5554bbe5f434c5c8.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0375,u+037a,u+0384,u+0386,u+0388-038a,u+038c,u+038e-03a1,u+03a3-03cf,u+03d7,u+2126,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Grek;
+    font-weight: 400;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Grek-Book-6eb8fae993f5ae2fc4415a8c00e6ca61.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Grek-Book-c9de2c0741586c1ab7b6e95541fc7807.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0375,u+037a,u+0384,u+0386,u+0388-038a,u+038c,u+038e-03a1,u+03a3-03cf,u+03d7,u+2126,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Arab;
+    font-weight: 800;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Arab-Black-53e88b4713d4e3ea79ef92c8c0895fdb.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Arab-Black-9dda323448d48d7e6cabf84d2df7dc11.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+0600-0603,u+060b-060c,u+0610,u+061b,u+061f,u+0621-063a,u+0640-0659,u+0660-0671,u+0679-0681,u+0683-068a,u+068c-068d,u+068f,u+0691,u+0693,u+0696,u+0698-069a,u+06a1,u+06a4,u+06a6,u+06a9-06ab,u+06af,u+06b1,u+06b3,u+06ba-06bc,u+06be,u+06c0-06c3,u+06cc-06cd,u+06d0,u+06d2-06d5,u+06f0-06f9,u+06fd-06fe,u+2002-2003,u+2009,u+200c-200f,u+25cc,u+fb50-fb85,u+fb88-fbbb,u+fbbd-fbc1,u+fbe4-fbe9,u+fbfc-fbff,u+fc48,u+fc5e-fc63,u+fd3e-fd3f,u+fdf2,u+fdfc,u+fe80-fefc,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Arab;
+    font-weight: 700;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Arab-Bold-e63e85e77e5b2a6fbc639717a915f006.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Arab-Bold-47ca0fd648a183136981f28d0218cef6.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+0600-0603,u+060b-060c,u+0610,u+061b,u+061f,u+0621-063a,u+0640-0659,u+0660-0671,u+0679-0681,u+0683-068a,u+068c-068d,u+068f,u+0691,u+0693,u+0696,u+0698-069a,u+06a1,u+06a4,u+06a6,u+06a9-06ab,u+06af,u+06b1,u+06b3,u+06ba-06bc,u+06be,u+06c0-06c3,u+06cc-06cd,u+06d0,u+06d2-06d5,u+06f0-06f9,u+06fd-06fe,u+2002-2003,u+2009,u+200c-200f,u+25cc,u+fb50-fb85,u+fb88-fbbb,u+fbbd-fbc1,u+fbe4-fbe9,u+fbfc-fbff,u+fc48,u+fc5e-fc63,u+fd3e-fd3f,u+fdf2,u+fdfc,u+fe80-fefc,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Arab;
+    font-weight: 400;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Arab-Book-ca3a6ec0431abf3a75bc7a417e33c396.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Arab-Book-1cd31794cbdd53724469ba03e8573dba.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+0600-0603,u+060b-060c,u+0610,u+061b,u+061f,u+0621-063a,u+0640-0659,u+0660-0671,u+0679-0681,u+0683-068a,u+068c-068d,u+068f,u+0691,u+0693,u+0696,u+0698-069a,u+06a1,u+06a4,u+06a6,u+06a9-06ab,u+06af,u+06b1,u+06b3,u+06ba-06bc,u+06be,u+06c0-06c3,u+06cc-06cd,u+06d0,u+06d2-06d5,u+06f0-06f9,u+06fd-06fe,u+2002-2003,u+2009,u+200c-200f,u+25cc,u+fb50-fb85,u+fb88-fbbb,u+fbbd-fbc1,u+fbe4-fbe9,u+fbfc-fbff,u+fc48,u+fc5e-fc63,u+fd3e-fd3f,u+fdf2,u+fdfc,u+fe80-fefc,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Cyrl;
+    font-weight: 800;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Cyrl-Black-a68f6f038e225c51fc50bd4935a3b540.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Cyrl-Black-b4305d9bf82554f631d2636c3ef90c54.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0400-045f,u+0462-0463,u+0472-0475,u+0490-0493,u+049a-049b,u+04a2-04a3,u+04ae-04b3,u+04ba-04bb,u+04d8-04d9,u+04e8-04e9,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Cyrl;
+    font-weight: 700;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Cyrl-Bold-d894d6c282e70d9bfbc4de10121eeb58.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Cyrl-Bold-7e54bccaf45728c472079785d5cd4519.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0400-045f,u+0462-0463,u+0472-0475,u+0490-0493,u+049a-049b,u+04a2-04a3,u+04ae-04b3,u+04ba-04bb,u+04d8-04d9,u+04e8-04e9,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Cyrl;
+    font-weight: 400;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Cyrl-Book-4c957473ac07ef93bf5378b9d00d270b.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Cyrl-Book-6f078f781ee313e298ad8997fd1ffe3d.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+00a0,u+00a4,u+00b6-00b7,u+0400-045f,u+0462-0463,u+0472-0475,u+0490-0493,u+049a-049b,u+04a2-04a3,u+04ae-04b3,u+04ba-04bb,u+04d8-04d9,u+04e8-04e9,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Hebr;
+    font-weight: 800;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Hebr-Black-a9978d19a63d2b5d2ca3747e046625c4.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Hebr-Black-f52613a9d541248805af1d0bb33102f8.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+0030-0039,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+05b0-05c4,u+05d0-05ea,u+05f0-05f4,u+200e-200f,u+20aa,u+fb2a-fb36,u+fb38-fb3c,u+fb3e,u+fb40-fb41,u+fb43-fb44,u+fb46-fb4f,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Hebr;
+    font-weight: 700;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Hebr-Bold-672823043332466e211b6f8ac0b7da7c.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Hebr-Bold-caa03e4cb8690e726ef1625c7d91a7a5.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+0030-0039,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+05b0-05c4,u+05d0-05ea,u+05f0-05f4,u+200e-200f,u+20aa,u+fb2a-fb36,u+fb38-fb3c,u+fb3e,u+fb40-fb41,u+fb43-fb44,u+fb46-fb4f,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: CircularSp-Hebr;
+    font-weight: 400;
+    src: url(https://encore.scdn.co/fonts/CircularSp-Hebr-Book-bd691543176c385b089f6986ddf58c5f.woff2) format("woff2"),url(https://encore.scdn.co/fonts/CircularSp-Hebr-Book-d8209975eafc81a9499df8401a339ddd.woff) format("woff");
+    unicode-range: u+0000,u+000d,u+0020,u+0030-0039,u+00a0,u+00a4,u+00b6-00b7,u+01c4-01c6,u+01f1-01f3,u+02bb-02bc,u+05b0-05c4,u+05d0-05ea,u+05f0-05f4,u+200e-200f,u+20aa,u+fb2a-fb36,u+fb38-fb3c,u+fb3e,u+fb40-fb41,u+fb43-fb44,u+fb46-fb4f,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: SpotifyMixUI;
+    font-weight: 700;
+    src: url(https://encore.scdn.co/fonts/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2) format("woff2"),url(https://encore.scdn.co/fonts/SpotifyMixUI-Bold-05392dabcaa9fab302f9ddc047b15752.woff) format("woff");
+    unicode-range: u+0020-007e,u+00a0-00ac,u+00ae-0137,u+0139-0148,u+014a-017e,u+018f,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+0e3f,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2002-2003,u+2009-200a,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20a6,u+20a9-20aa,u+20ac,u+20b4,u+20b8-20ba,u+20bd,u+20bf,u+2113,u+2116-2117,u+2122,u+2126,u+2160-2169,u+216c-216f,u+2190-2193,u+2196-2199,u+2202,u+2206,u+220f,u+2211-2212,u+2215,u+221a,u+221e,u+222b,u+2248,u+2260,u+2264-2265,u+fb01-fb02,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: SpotifyMixUI;
+    font-weight: 400;
+    src: url(https://encore.scdn.co/fonts/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2) format("woff2"),url(https://encore.scdn.co/fonts/SpotifyMixUI-Regular-b342a41ec78025c361c018e5d355ab21.woff) format("woff");
+    unicode-range: u+0020-007e,u+00a0-00ac,u+00ae-0137,u+0139-0148,u+014a-017e,u+018f,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+0e3f,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2002-2003,u+2009-200a,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20a6,u+20a9-20aa,u+20ac,u+20b4,u+20b8-20ba,u+20bd,u+20bf,u+2113,u+2116-2117,u+2122,u+2126,u+2160-2169,u+216c-216f,u+2190-2193,u+2196-2199,u+2202,u+2206,u+220f,u+2211-2212,u+2215,u+221a,u+221e,u+222b,u+2248,u+2260,u+2264-2265,u+fb01-fb02,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: SpotifyMixUITitle;
+    font-weight: 800;
+    src: url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2) format("woff2 supports variations"),url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2) format("woff2-variations"),url(https://encore.scdn.co/fonts/SpotifyMixUITitle-Extrabold-ba6c73cd7f82c81e49cf2204017803ed.woff2) format("woff2"),url(https://encore.scdn.co/fonts/SpotifyMixUITitle-Extrabold-dd06104c9de7463b60455a65171cab06.woff) format("woff");
+    unicode-range: u+0020-007e,u+00a0-00ac,u+00ae-0137,u+0139-0148,u+014a-017e,u+018f,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+0e3f,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2002-2003,u+2009-200a,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20a6,u+20a9-20aa,u+20ac,u+20b4,u+20b8-20ba,u+20bd,u+20bf,u+2113,u+2116-2117,u+2122,u+2126,u+2160-2169,u+216c-216f,u+2190-2193,u+2196-2199,u+2202,u+2206,u+220f,u+2211-2212,u+2215,u+221a,u+221e,u+222b,u+2248,u+2260,u+2264-2265,u+fb01-fb02,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: SpotifyMixUITitle;
+    font-weight: 700;
+    src: url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2) format("woff2 supports variations"),url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2) format("woff2-variations"),url(https://encore.scdn.co/fonts/SpotifyMixUITitle-Bold-37290f1de77f297fcc26d71e9afcf43f.woff2) format("woff2"),url(https://encore.scdn.co/fonts/SpotifyMixUITitle-Bold-72703891d365729cfcfa9788c8904a4d.woff) format("woff");
+    unicode-range: u+0020-007e,u+00a0-00ac,u+00ae-0137,u+0139-0148,u+014a-017e,u+018f,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+0e3f,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2002-2003,u+2009-200a,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20a6,u+20a9-20aa,u+20ac,u+20b4,u+20b8-20ba,u+20bd,u+20bf,u+2113,u+2116-2117,u+2122,u+2126,u+2160-2169,u+216c-216f,u+2190-2193,u+2196-2199,u+2202,u+2206,u+220f,u+2211-2212,u+2215,u+221a,u+221e,u+222b,u+2248,u+2260,u+2264-2265,u+fb01-fb02,u+ffff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: SpotifyMixUITitleVariable;
+    font-stretch: 50 150;
+    font-weight: 100 1000;
+    src: url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2) format("woff2 supports variations"),url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2) format("woff2-variations"),url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2) format("woff2"),url(https://encore.scdn.co/fonts/SpotifyMixUITitleVariable-280d4cad9e19d3b0d7c7dd08bb600771.woff) format("woff");
+    unicode-range: u+0020-007e,u+00a0-00ac,u+00ae-0137,u+0139-0148,u+014a-017e,u+018f,u+01a0-01a1,u+01af-01b0,u+01cd-01d4,u+01e6-01e7,u+01f4-01f5,u+01fa-01ff,u+0218-021b,u+0226-0227,u+0232-0233,u+0237,u+0259,u+02bc,u+02c6-02c7,u+02d8-02dd,u+0300-0304,u+0306-030c,u+0312,u+031b,u+0323,u+0326-0328,u+0335-0338,u+0e3f,u+1e0c-1e0d,u+1e20-1e21,u+1e24-1e25,u+1e36-1e37,u+1e44-1e45,u+1e56-1e57,u+1e62-1e63,u+1e6c-1e6d,u+1e80-1e85,u+1e8a-1e8d,u+1e92-1e93,u+1e9e,u+1ea0-1ef9,u+2002-2003,u+2009-200a,u+2010-2011,u+2013-2015,u+2018-201a,u+201c-201e,u+2020-2022,u+2026,u+2030,u+2032-2033,u+2039-203a,u+2044,u+2070,u+2074-2079,u+2080-2089,u+20a6,u+20a9-20aa,u+20ac,u+20b4,u+20b8-20ba,u+20bd,u+20bf,u+2113,u+2116-2117,u+2122,u+2126,u+2160-2169,u+216c-216f,u+2190-2193,u+2196-2199,u+2202,u+2206,u+220f,u+2211-2212,u+2215,u+221a,u+221e,u+222b,u+2248,u+2260,u+2264-2265,u+fb01-fb02,u+ffff
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, button, input, select, textarea {
+    font-family: var(--encore-body-font-stack, var(--fallback-fonts, sans-serif)), sans-serif;
+}
+body{
+    font-size: 16px;
+    line-height: normal;
+    color: #fff;
+    text-transform: none;
+    background-color: #121212;
+}
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #000;
+    height: 56px;
+    gap: 16px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.max-logo{
+    display: none;
+}
+nav{
+    display: flex;
+}
+.nav-button{
+    font-family: var(--encore-body-font-stack);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    padding: 0;
+}
+.nav-button span{
+    display: flex;
+    background-color: #fff;
+    border-radius: 999px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+.button-small{
+    min-block-size: 32px;
+    padding-block: 4px;
+    padding-inline: 16px; 
+}
+.burger-button{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.content-wrapper{
+    margin-top: 56px;
+}
+.premium-banner{
+    background-color: #ffcdd2;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    color: #000;
+}
+.banner-Xbutton{
+    display: inline-block;    
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border: none;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 999px;
+}
+.banner-title{
+    font-family: var(--encore-title-font-stack);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.banner-btn{
+    margin-top: 8px;
+}
+.banner-black-btn{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 999px;
+    
+}
+.banner-btn-text{
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    min-block-size: 32px;
+    padding: 4px 16px;
+    align-items: center;
+    -webkit-font-smoothing :antialiased;
+}
+.scroll-title{
+    display: -webkit-box;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    overflow: hidden;
+    line-clamp: 2px;
+    -webkit-box-orient: vertical;
+}
+.scroll-head{
+    font-family: var(--encore-title-font-stack);
+    font-weight: 700;
+    text-wrap: balance;
+    font-size: 1.25rem;
+}
+.scroll-carousel{
+    display: flex;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.carousel-holder{
+    padding: 8px;
+    max-width: 168px;
+    border-radius: 6px;
+    color: #fff;
+    scroll-snap-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.carousel-image{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    inline-size: 100%;
+    border-radius: 4px;
+}
+.carousel-title{
+    font-family: var(--encore-body-font-stack);
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.footer{
+    padding: 8px 16px 40px;
+    background-color: rgb(18 , 18, 18);
+    width: 100%;
+}
+.footer-horizontal-line{
+    border-color: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    border: 0px;
+    border-block-start: 1px solid #292929;
+    margin-block: 20px;
+}
+.footer-horizontal{
+    margin-block-start: 0px;
+}
+.footer-title{
+    color: #fff;
+    -webkit-tap-highlight-color: transparent;
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: var(--encore-body-font-stack, var(--fallback-fonts, sans-serif));
+}
+.footer-section-comapany{
+    display: flex;
+    flex-direction: column;
+}
+.footer-subs{
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--encore-body-font-stack, var(--fallback-fonts, sans-serif));
+    padding-block-end: 8px;
+    color: #b3b3b3;
+}
+.social-links{
+    display: inline;
+    padding-right: 16px;
+}
+.social-wrapper{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+}
+.footer-policies{
+    display: flex;
+    flex-flow: column wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+.policy-content{
+    display: flex;
+    flex-flow: wrap;
+}
+.policy-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.policy-text, .copyright-text{
+    margin-right: 16px;
+    color: #b3b3b3;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 0.875rem;
+    font-weight: 400;
+    font-family: var(--encore-body-font-stack, var(--fallback-fonts, sans-serif));
+}
+.policy-margin-bottom{
+    margin-bottom: 8px;
+}
+.copyright-div{
+    display: flex;
+    flex-direction: 0 0 auto;
+    flex-flow: row;
+    -webkit-box-align: end;
+    align-items: end;
+    color: #b3b3b3;
+}
+.copyright-text{
+    margin: 0;
+}
+.language-button{
+    display: inline-flex;
+    background-color: transparent;
+    border: none;
+    font-size: 0.8125rem;
+    min-block-size: 32px;
+    padding: 4px 16px;
+    color: #fff;
+    border: 1px solid #7c7c7c;
+    border-radius: 999px;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    transition-property: border-color, transform;
+    font-weight: 700;
+}
+.lan{
+    padding-inline-start: calc(12px + 16px + 8px);
+}
+.language-selector{
+    padding-top: 16px;
+    background-color: transparent;
+}
+@media screen and (min-width:370px) {
+    .min-logo{
+        display: none;
+    }
+    .max-logo{
+        display: block;
+    }
+}
